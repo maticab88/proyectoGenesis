@@ -25,6 +25,11 @@ html {
 }
 
 /* --------------- NAV -------------- */
+
+.header {
+	margin: 0;
+}
+
 .nav {
 	border-top: 1.5rem solid var(--blue);
 	display: flex;
@@ -158,4 +163,40 @@ html {
 .glider-dot.active {
 	opacity: 1;
 	background: #fff;
+}
+
+/* --------------- PLAN GENESIS ---------------*/
+.planGenesis {
+	background-color: #fff;
+	margin: 0;
+	display: flex;
+	justify-content: space-around;
+	padding: 1.5rem;
+	align-items: center;
+}
+
+.planGenesis__info {
+	padding: 1rem;
+}
+
+.planGenesis__title {
+	color: var(--blue);
+	font-weight: 500;
+	font-size: 21px;
+}
+
+.planGenesis__paragraphe {
+	font-size: 18px;
+}
+
+.planGenesis__btn {
+	padding: 0.8rem;
+	background-color: var(--red);
+	color: #fff;
+	font-size: 20px;
+}
+
+.planGenesis__btns {
+	color: #ffff;
+	font-weight: 300;
 }
