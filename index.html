@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Genesis Motors</title>
+
+		<!-- font-awesome -->
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+			integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+
+		<!-- Glider for carousels -->
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/glider-js@1.7.7/glider.min.css"
+		/>
+
+		<link rel="stylesheet" href="assets/css/styles.css" />
+	</head>
+	<body>
+		<header>
+			<nav class="nav">
+				<div class="nav__menu">
+					<div class="nav__logo">
+						<span class="nav__logos">Genesis</span>
+						<span class="nav__logos"> <strong>Motors</strong> </span>
+					</div>
+
+					<div class="nav__link">
+						<a href="#inicio" class="nav__links">Inicio</a>
+						<a href="#producto" class="nav__links">Productos</a>
+						<a href="#contacto" class="nav__links">Contactos</a>
+						<a href="#comprar" class="nav__links">¿Cómo comprar?</a>
+						<a href="#llegar" class="nav__links">¿Cómo llegar?</a>
+					</div>
+				</div>
+				<div class="nav__btn">
+					<a href="#" class="btn__search">
+						<i class="fas fa-search"></i>
+					</a>
+					<a href="#" class="nav__btns nav__btns--iniciar">Inicio de sessión</a>
+					<a href="#" class="nav__btns nav__btns--crear">Crear cuenta</a>
+				</div>
+			</nav>
+
+			<div class="carousel">
+				<div class="carousel__contenedor">
+					<button aria-label="Anterior" class="carousel__anterior">
+						<i class="fas fa-chevron-left"></i>
+					</button>
+
+					<div class="carousel__lista">
+						<div class="carousel__elemento">
+							<img src="assets/img/image_1.jpg" alt="" />
+						</div>
+						<div class="carousel__elemento">
+							<img src="assets/img/imagen_2.jpg" alt="" />
+						</div>
+						<div class="carousel__elemento">
+							<img src="assets/img/imagen_3.jpg" alt="" />
+						</div>
+					</div>
+
+					<button aria-label="Siguiente" class="carousel__siguiente">
+						<i class="fas fa-chevron-right"></i>
+					</button>
+				</div>
+
+				<div role="tablist" class="carousel__indicadores"></div>
+			</div>
+		</header>
+
+		<!-- ----------------------- SCRIPT ------------------------->
+		<!-- Glider for carousels-->
+		<script src="https://cdn.jsdelivr.net/npm/glider-js@1.7.7/glider.min.js"></script>
+		<script src="assets/js/gliders.js"></script>
+	</body>
+</html>
