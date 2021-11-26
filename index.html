@@ -21,6 +21,18 @@
 			href="https://cdn.jsdelivr.net/npm/glider-js@1.7.7/glider.min.css"
 		/>
 
+		<!-- Box icons -->
+		<link
+			href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css"
+			rel="stylesheet"
+		/>
+
+		<!-- swiperjs -->
+		<link
+			rel="stylesheet"
+			href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+		/>
+
 		<link rel="stylesheet" href="assets/css/styles.css" />
 	</head>
 	<body>
@@ -28,22 +40,18 @@
 			<nav class="nav">
 				<div class="nav__menu">
 					<div class="nav__logo">
-						<span class="nav__logos">Genesis</span>
-						<span class="nav__logos"> <strong>Motors</strong> </span>
+						<img src="assets/img/GM_03.svg" alt="" />
 					</div>
 
 					<div class="nav__link">
-						<a href="#inicio" class="nav__links">Inicio</a>
-						<a href="#producto" class="nav__links">Productos</a>
-						<a href="#contacto" class="nav__links">Contactos</a>
-						<a href="#comprar" class="nav__links">¿Cómo comprar?</a>
-						<a href="#llegar" class="nav__links">¿Cómo llegar?</a>
+						<a href="#inicio" class="nav__links">INICIO</a>
+						<a href="#producto" class="nav__links">PRODUCTOS</a>
+						<a href="#contacto" class="nav__links">CONTACTO</a>
+						<a href="#preguntas" class="nav__links">PREGUNTAS FRECUENTES</a>
 					</div>
 				</div>
 				<div class="nav__btn">
-					<a href="#" class="btn__search">
-						<i class="fas fa-search"></i>
-					</a>
+					<a href="#" class="btn__search"> </a>
 					<a href="#" class="nav__btns nav__btns--iniciar">Inicio de sessión</a>
 					<a href="#" class="nav__btns nav__btns--crear">Crear cuenta</a>
 				</div>
@@ -88,9 +96,271 @@
 			</div>
 		</section>
 
+		<section class="planes">
+			<div class="img"></div>
+			<div class="overlay"></div>
+			<div class="planes__content">
+				<div class="planes__header">
+					<h2 class="title">¿COMO TRABAJAMOS?</h2>
+				</div>
+				<div class="planes__item">
+					<div class="item">
+						<div class="item__log">
+							<i class="bx bx-dollar-circle"></i>
+						</div>
+						<h3 class="item__info"> FINANCIAMIENTO SIN INTERES </h3>
+						<p class="item__content">Planes de pago 0%</p>
+					</div>
+					<div class="item">
+						<div class="item__log">
+							<i class="bx bx-building-house"></i>
+						</div>
+						<h3 class="item__info"> DESDE LA COMODIDAD DEL HOGAR </h3>
+						<p class="item__content">Con un sistema de suscripción Online</p>
+					</div>
+					<div class="item">
+						<div class="item__log">
+							<i class="bx bx-lock-open"></i>
+						</div>
+						<h3 class="item__info"> GENESIS MOTORS TE CUIDAD </h3>
+						<p class="item__content">El sistema de compras más seguro</p>
+					</div>
+				</div>
+				<a href="#" class="plan_cta">PLAN GENESIS</a>
+			</div>
+		</section>
+
+		<section class="stayHouse">
+			<div class="stayHouse__info">
+				<h2 class="stayHouse__title">QUEDATE EN CASA</h2>
+				<p class="stayHouse__content"
+					>Nuestro equipo de atencion estara disponible para asesorarte en todo
+					lo que necesites</p
+				>
+				<a class="stayHouse__btn" href="#"> CONTACTANOS </a>
+			</div>
+
+			<div class="stayHouse__img"> </div>
+		</section>
+
+		<section class="modelosDestacados">
+			<div class="modelosDestacados__title">
+				<h3>MODELOS DESTACADOS</h3>
+				<hr />
+			</div>
+			<div class="slide-container">
+				<span class="slider-span" id="slider-span1"></span>
+				<span class="slider-span" id="slider-span2"></span>
+				<span class="slider-span" id="slider-span3"></span>
+
+				<div class="image-slider">
+					<div class="slide-div" id="slide-1">
+						<img
+							src="assets/img/HONDA WAVE S 110 2.png"
+							alt=""
+							class="img"
+							id="img1"
+						/>
+						<a href="#slider-span1" class="button" id="button-1"></a>
+					</div>
+
+					<div class="slide-div" id="slide-2">
+						<img
+							src="assets/img/HONDA XR 150L 2.png"
+							alt=""
+							class="img"
+							id="img2"
+						/>
+						<a href="#slider-span2" class="button" id="button-2"></a>
+					</div>
+
+					<div class="slide-div" id="slide-3">
+						<img
+							src="assets/img/HONDA GLH 150 3.png"
+							alt=""
+							class="img"
+							id="img3"
+						/>
+						<a href="#slider-span3" class="button" id="button-3"></a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="categoria">
+			<div class="categoria__title">
+				<h2>CATEGORIA</h2>
+				<hr />
+			</div>
+			<div class="categoria__container">
+				<div class="categoria__item1">
+					<h3>CUB / SCOOTERS</h3>
+				</div>
+				<div class="categoria__item2">
+					<h3>NAKED / SPORT</h3>
+				</div>
+				<div class="categoria__item3">
+					<h3>ENDURO</h3>
+				</div>
+			</div>
+		</section>
+
+		<section class="preguntasFrecuentes">
+			<div class="preguntasFrecuentes__container">
+				<div class="accordion">
+					<!-- item 1 -->
+					<div class="accordion-item" id="question1">
+						<a href="#question1" class="accordion-link">
+							How often do you go to beach
+							<i class="bx bx-plus"></i>
+							<i class="bx bx-minus"></i>
+						</a>
+						<div class="answer">
+							<p>
+								Lorem ipsum dolor sit amet consectetur adipisicing elit.
+								Blanditiis, placeat odio aperiam voluptas velit doloremque ad
+								sequi nam et, facilis in autem ab est enim, error facere quo
+								eligendi officia.
+							</p>
+						</div>
+					</div>
+
+					<!-- item 2 -->
+					<div class="accordion-item" id="question2">
+						<a href="#question2" class="accordion-link">
+							How often do you go to beach
+							<i class="bx bx-plus"></i>
+							<i class="bx bx-minus"></i>
+						</a>
+						<div class="answer">
+							<p>
+								Lorem ipsum dolor sit amet consectetur adipisicing elit.
+								Blanditiis, placeat odio aperiam voluptas velit doloremque ad
+								sequi nam et, facilis in autem ab est enim, error facere quo
+								eligendi officia.
+							</p>
+						</div>
+					</div>
+
+					<!-- item 3 -->
+					<div class="accordion-item" id="question3">
+						<a href="#question3" class="accordion-link">
+							How often do you go to beach
+							<i class="bx bx-plus"></i>
+							<i class="bx bx-minus"></i>
+						</a>
+						<div class="answer">
+							<p>
+								Lorem ipsum dolor sit amet consectetur adipisicing elit.
+								Blanditiis, placeat odio aperiam voluptas velit doloremque ad
+								sequi nam et, facilis in autem ab est enim, error facere quo
+								eligendi officia.
+							</p>
+						</div>
+					</div>
+
+					<!-- item 4 -->
+					<div class="accordion-item" id="question4">
+						<a href="#question4" class="accordion-link">
+							How often do you go to beach
+							<i class="bx bx-plus"></i>
+							<i class="bx bx-minus"></i>
+						</a>
+						<div class="answer">
+							<p
+								>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+								Blanditiis, placeat odio aperiam voluptas velit doloremque ad
+								sequi nam et, facilis in autem ab est enim, error facere quo
+								eligendi officia.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<footer class="footer">
+			<div class="col-1-footer">
+				<img src="assets/img/GM_03.svg" class="col-1-footer__img" alt="" />
+				<p
+					>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque nihil
+					debitis natus. Impedit, quaerat repellat magni corporis quod obcaecati
+					illum.
+				</p>
+				<div class="col-1__iconos">
+					<i class="bx bxl-instagram"></i>
+					<i class="bx bxl-facebook-circle"></i>
+					<i class="bx bxl-twitter"></i>
+				</div>
+			</div>
+
+			<div class="col-2-footer">
+				<h3 class="col-2-footer__title">Navegación</h3>
+				<ul>
+					<li>
+						<a href="#">Inicio</a>
+					</li>
+					<li>
+						<a href="#">Productos</a>
+					</li>
+					<li>
+						<a href="#">Contactanos</a>
+					</li>
+					<li>
+						<a href="#">¿Como comprar?</a>
+					</li>
+					<li>
+						<a href="#">¿Como llegar?</a>
+					</li>
+				</ul>
+			</div>
+
+			<div class="col-3-footer">
+				<h3 class="col-3-footer__title">Contactanos</h3>
+				<ul>
+					<li>
+						<i class="bx bx-mail-send"></i>
+						<small>genesismotors@gmail.com</small>
+					</li>
+					<li>
+						<i class="bx bx-mobile-alt"></i>
+						<small>+54 351 726-8566</small>
+					</li>
+					<li>
+						<i class="bx bxs-map"></i>
+						<small>Cayetano Silva 180</small>
+					</li>
+				</ul>
+			</div>
+
+			<div class="col-4-footer">
+				<h3 class="col-4-footer__title">Envianos un mensaje</h3>
+				<label for="">
+					<input type="text" class="col-4-footer__input" placeholder="email" />
+					<button class="col-4-footer__button">
+						<i class="bx bx-send"></i>
+					</button>
+				</label>
+			</div>
+
+			<div class="footer__derechos">
+				<p>2020 Genesis Motors. Todos los derechos reservados</p>
+
+				<div class="footer__link">
+					<a href="#">Terminos & Condiciones | </a>
+					<a href="#">Politicas de Privacidad | </a>
+					<a href="#">Politicas de compilance |</a>
+					<a href="#">Condiciones Particulares</a>
+				</div>
+			</div>
+		</footer>
+
 		<!-- ----------------------- SCRIPT ------------------------->
 		<!-- Glider for carousels-->
 		<script src="https://cdn.jsdelivr.net/npm/glider-js@1.7.7/glider.min.js"></script>
 		<script src="assets/js/gliders.js"></script>
+
+		<!-- swiperjs -->
+		<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
 	</body>
 </html>
