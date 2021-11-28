@@ -36,8 +36,9 @@ html {
 	border-top: 1.5rem solid var(--blue);
 	display: flex;
 	justify-content: space-around;
-	padding: 20px;
 	height: 105px;
+	align-items: center;
+	margin: auto;
 }
 
 .nav__menu {
@@ -76,6 +77,7 @@ html {
 
 .nav__btn {
 	padding: 5px;
+	text-align: center;
 }
 
 .btn__search {
@@ -209,6 +211,7 @@ html {
 .planGenesis__btns {
 	color: #ffff;
 	font-weight: 300;
+	font-size: 22px;
 }
 
 /* ------------- planes -------------- */
@@ -337,6 +340,7 @@ html {
 .stayHouse__title {
 	color: #fff;
 	font-weight: 500;
+	font-size: 45px;
 }
 
 .stayHouse__img {
@@ -348,16 +352,20 @@ html {
 .stayHouse__content {
 	color: #fff;
 	font-weight: 300;
-	width: 61%;
+	width: 406px;
+	font-size: 20px;
+	text-align: left;
 }
 
 .stayHouse__btn {
 	margin-top: 10px;
 	background: var(--blue);
-	width: 30%;
+	width: 212px;
 	padding: 0.5rem;
 	color: #fff;
-	font-weight: 300;
+	font-weight: 400;
+	font-size: 22px;
+	text-align: center;
 }
 
 .planes .overlay__models {
