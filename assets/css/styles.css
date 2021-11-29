@@ -534,7 +534,7 @@ html {
 }
 
 .categoria__item1 {
-	background: url('/assets/img/scooter.jpg');
+	background: url('/assets/img/C01.jpg');
 	background-size: cover;
 	background-position: center;
 	width: 350px;
@@ -549,7 +549,7 @@ html {
 }
 
 .categoria__item2 {
-	background: url('/assets/img/test_1.jpg');
+	background: url('/assets/img/C02.jpg');
 	background-size: cover;
 	background-position: center;
 	width: 350px;
@@ -563,7 +563,7 @@ html {
 }
 
 .categoria__item3 {
-	background: url('/assets/img/test_2.jpg');
+	background: url('/assets/img/C03.jpg');
 	background-size: cover;
 	background-position: center;
 	width: 350px;
