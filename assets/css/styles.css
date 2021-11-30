@@ -228,7 +228,7 @@ html {
 }
 
 .planes .img {
-	background: url('/assets/img/IMAGEN\ S02_02.jpg');
+	background: url('../img/IMAGEN\ S02_02.jpg');
 	height: 100vh;
 	width: 100%;
 	background-size: cover;
