@@ -343,7 +343,8 @@ html {
 .stayHouse__title {
 	color: #fff;
 	font-weight: 500;
-	font-size: 45px;
+	font-size: 30px;
+	margin-left: 3rem;
 }
 
 .stayHouse__img {
@@ -358,6 +359,7 @@ html {
 	width: 406px;
 	font-size: 20px;
 	text-align: left;
+	margin-left: 3rem;
 }
 
 .stayHouse__btn {
@@ -369,6 +371,7 @@ html {
 	font-weight: 400;
 	font-size: 22px;
 	text-align: center;
+	margin-left: 3rem;
 }
 
 .planes .overlay__models {
@@ -421,22 +424,23 @@ html {
 .modelosDestacados__title {
 	position: relative;
 	top: 50px;
-	font-size: 35px;
+	font-size: 45px;
 	display: flex;
 	flex-direction: column;
-	margin-top: 77px;
+	margin-top: 19px;
 	justify-content: center;
 	align-items: center;
 }
 
 .modelosDestacados__title hr {
-	margin-top: 30px;
+	margin-top: 19px;
 	width: 20%;
 	position: relative;
 	z-index: 1000;
 	margin-left: auto;
 	margin-right: auto;
 	color: var(--red);
+	border: solid;
 }
 
 /* .image-slider {
@@ -610,8 +614,10 @@ html {
 .categoria__item2 h3,
 .categoria__item3 h3 {
 	display: flex;
-	height: 40%;
-	text-align: center;
+	height: 100%;
+	width: 100%;
+	justify-content: center;
+	align-items: center;
 	position: relative;
 	z-index: 3;
 	color: #fff;

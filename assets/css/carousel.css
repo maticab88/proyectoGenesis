@@ -7,6 +7,10 @@
 	align-items: center;
 }
 
+#carousel3d .carousel-3d-container {
+	overflow: initial;
+}
+
 #carousel3d .carousel-3d-slide {
 	display: flex;
 	flex: 1;
@@ -17,8 +21,8 @@
 	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 	margin-left: auto;
 	margin-right: auto;
-	border: none;
 	background: transparent;
+	border: none;
 }
 
 #carousel3d .carousel-3d-slide.current {
@@ -26,8 +30,8 @@
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	height: 100%;
 	position: relative;
+	overflow: initial;
 }
 
 #carousel3d .carousel-3d-slide.current span {
@@ -41,9 +45,31 @@
 	width: 250px;
 }
 
+#carousel3d .carousel-3d-slide.current .container_info {
+	display: block;
+}
+
 #carousel3d .carousel-3d-slide .container_info {
-	border-style: solid;
-	position: absolute;
-	bottom: -15px;
+	position: relative;
 	z-index: 1000;
+	bottom: -35px;
+	height: 100px;
+	width: 350px;
+	font-size: 20px;
+	font-weight: 400;
+	display: none;
+}
+
+#carousel3d .carousel-3d-slide .container_info .btn {
+	background: #ff304a;
+	width: 131px;
+	height: 31;
+	padding: 5px;
+	border-radius: 5px;
+	color: #fff;
+	cursor: pointer;
+}
+
+#carousel3d .carousel-3d-slide .container_info .btn:hover {
+	box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
 }
