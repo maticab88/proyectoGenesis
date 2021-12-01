@@ -386,7 +386,7 @@ html {
 }
 
 .stayHouse__img {
-	background-image: url('/assets/img/imagen_mueble.jpg');
+	background-image: url('assets/img/imagen_mueble.jpg');
 	background-size: cover;
 	width: 100%;
 }
@@ -441,7 +441,7 @@ html {
 	display: flex;
 	align-items: center;
 	overflow: hidden;
-	background-image: url('/assets/img/IMAGEN\ S04.jpg');
+	background-image: url('assets/img/IMAGEN\ S04.jpg');
 	background-size: cover;
 	background-position: center;
 	flex-direction: column;
@@ -553,7 +553,7 @@ html {
 
 /* ----------------- categoria -----------------*/
 .categoria {
-	background: url('/assets/img/IMAGEN\ S05.jpg');
+	background: url('assets/img/IMAGEN\ S05.jpg');
 	height: 100vh;
 	width: 100%;
 	background-size: cover;
@@ -586,7 +586,7 @@ html {
 }
 
 .categoria__item1 {
-	background: url('/assets/img/C01.jpg');
+	background: url('assets/img/C01.jpg');
 	background-size: cover;
 	background-position: center;
 	width: 350px;
@@ -601,7 +601,7 @@ html {
 }
 
 .categoria__item2 {
-	background: url('/assets/img/C02.jpg');
+	background: url('assets/img/C02.jpg');
 	background-size: cover;
 	background-position: center;
 	width: 350px;
@@ -615,7 +615,7 @@ html {
 }
 
 .categoria__item3 {
-	background: url('/assets/img/C03.jpg');
+	background: url('assets/img/C03.jpg');
 	background-size: cover;
 	background-position: center;
 	width: 350px;
