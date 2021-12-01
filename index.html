@@ -56,10 +56,18 @@
 					</div>
 
 					<div class="nav__link">
-						<a href="#inicio" class="nav__links">INICIO</a>
-						<a href="#producto" class="nav__links">PRODUCTOS</a>
-						<a href="#contacto" class="nav__links">CONTACTO</a>
-						<a href="#preguntas" class="nav__links">PREGUNTAS FRECUENTES</a>
+							<a href="#inicio" class="nav__links">INICIO </a>
+							<div class="nav__link nav__link--dropdown">
+								<a href="#producto" class="nav__links product__btn">PRODUCTOS</a>
+								<i class='bx bx-chevron-down'></i>
+								<div class="dropdown-content">
+									<a href="#">link 1</a>
+									<a href="#">link 2</a>
+									<a href="#">link 3</a>
+								</div>
+							</div>
+							<a href="#contacto" class="nav__links">CONTACTO</a>
+							<a href="#preguntas" class="nav__links">PREGUNTAS FRECUENTES</a>
 					</div>
 				</div>
 				<div class="nav__btn">
@@ -95,7 +103,7 @@
 			</div>
 		</header>
 
-		<section class="planGenesis">
+		<section id="contacto" class="planGenesis">
 			<div class="planGenesis__info">
 				<h3 class="planGenesis__title">PLAN GENESIS, TU MEJOR OPCION.</h3>
 				<p class="planGenesis__paragraphe"
@@ -210,7 +218,7 @@
 			</div>
 		</section>
 
-		<section class="preguntasFrecuentes">
+		<section class="preguntasFrecuentes" id="preguntas">
 			<div class="preguntasFrecuentes__container">
 				<div class="accordion">
 					<!-- item 1 -->
