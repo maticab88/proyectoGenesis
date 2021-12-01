@@ -601,7 +601,7 @@ html {
 }
 
 .categoria__item2 {
-	background: url('/assets/img/C02.jpg');
+	background: url('../img/C02.jpg');
 	background-size: cover;
 	background-position: center;
 	width: 350px;
@@ -615,7 +615,7 @@ html {
 }
 
 .categoria__item3 {
-	background: url('/assets/img/C03.jpg');
+	background: url('../img/C03.jpg');
 	background-size: cover;
 	background-position: center;
 	width: 350px;
