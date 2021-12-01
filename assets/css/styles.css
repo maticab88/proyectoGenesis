@@ -586,7 +586,7 @@ html {
 }
 
 .categoria__item1 {
-	background: url('/assets/img/C01.jpg');
+	background: url('../img/C01.jpg');
 	background-size: cover;
 	background-position: center;
 	width: 350px;
