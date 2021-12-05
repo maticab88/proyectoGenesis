@@ -63,7 +63,7 @@
 
 		<section class="product">
 			<div class="producto__img">
-				<img src="/assets/img/HONDA WAVE S 110 2.png" alt="" />
+				<img src="/assets/img/WAVEs110_001 1.png" alt="" />
 			</div>
 			<div class="producto__info">
 				<div class="product__info-header">
@@ -128,14 +128,68 @@
 		</section>
 
 		<section class="product__imagenes">
-			<div class="product__imagen imagen-1"></div>
-			<div class="product__imagen imagen-2"></div>
-			<div class="product__imagen imagen-3"></div>
-			<div class="product__imagen imagen-4"></div>
-			<div class="product__imagen imagen-5"></div>
-			<div class="product__imagen imagen-6"></div>
-			<div class="product__imagen imagen-7"></div>
-			<div class="product__imagen imagen-8"></div>
+			<div class="full-img" id="fulImgBox">
+				<img src="/assets/img/Rectangle 30.png" id="fullImg" alt="" />
+				<span onclick="closeImg()">X</span>
+			</div>
+
+			<div class="product__imagen imagen-1">
+				<img
+					src="/assets/img/Rectangle 30.png"
+					onclick="openFullImg(this.src)"
+					alt=""
+				/>
+			</div>
+
+			<div class="product__imagen imagen-1">
+				<img
+					src="/assets/img/Rectangle 36.png"
+					onclick="openFullImg(this.src)"
+					alt=""
+				/>
+			</div>
+			<div class="product__imagen imagen-2">
+				<img
+					src="/assets/img/Rectangle 33.png"
+					onclick="openFullImg(this.src)"
+					alt=""
+				/>
+			</div>
+			<div class="product__imagen imagen-3">
+				<img
+					src="/assets/img/Rectangle 37.png"
+					onclick="openFullImg(this.src)"
+					alt=""
+				/>
+			</div>
+			<div class="product__imagen imagen-4">
+				<img
+					src="/assets/img/Rectangle 34.png"
+					onclick="openFullImg(this.src)"
+					alt=""
+				/>
+			</div>
+			<div class="product__imagen imagen-5">
+				<img
+					src="/assets/img/Rectangle 41.png"
+					onclick="openFullImg(this.src)"
+					alt=""
+				/>
+			</div>
+			<div class="product__imagen imagen-6">
+				<img
+					src="/assets/img/Rectangle 32.png"
+					onclick="openFullImg(this.src)"
+					alt=""
+				/>
+			</div>
+			<div class="product__imagen imagen-7">
+				<img
+					src="/assets/img/Rectangle 35.png"
+					onclick="openFullImg(this.src)"
+					alt=""
+				/>
+			</div>
 		</section>
 
 		<section class="view__product">
@@ -281,5 +335,7 @@
 				</div>
 			</div>
 		</footer>
+
+		<script src="/assets/js/galeria.js"></script>
 	</body>
 </html>

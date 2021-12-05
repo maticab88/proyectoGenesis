@@ -211,41 +211,87 @@ body {
 }
 
 .imagen-1 {
-	background-image: url('/assets/img/Rectangle\ 30.png');
 	cursor: pointer;
+}
+
+.imagen-1 img {
+	height: 100%;
 }
 
 .imagen-2 {
-	background-image: url('/assets/img/Rectangle 36.png');
 	cursor: pointer;
+}
+.imagen-2 img {
+	height: 100%;
 }
 
 .imagen-3 {
-	background-image: url('/assets/img/Rectangle 33.png');
 	cursor: pointer;
+}
+.imagen-3 img {
+	height: 100%;
 }
 
 .imagen-4 {
-	background-image: url('/assets/img/Rectangle 37.png');
 	cursor: pointer;
+}
+.imagen-4 img {
+	height: 100%;
 }
 
 .imagen-5 {
-	background-image: url('/assets/img/Rectangle 34.png');
 	cursor: pointer;
+}
+.imagen-5 img {
+	height: 100%;
 }
 
 .imagen-6 {
-	background-image: url('/assets/img/Rectangle 41.png');
 	cursor: pointer;
+}
+.imagen-6 img {
+	height: 100%;
 }
 
 .imagen-7 {
-	background-image: url('/assets/img/Rectangle 32.png');
+	cursor: pointer;
+}
+.imagen-7 img {
+	height: 100%;
 }
 
 .imagen-8 {
-	background-image: url('/assets/img/Rectangle 35.png');
+	cursor: pointer;
+}
+.imagen-8 img {
+	height: 100%;
+}
+
+.full-img {
+	width: 100%;
+	height: 100vh;
+	background-color: rgba(0, 0, 0, 0.9);
+	position: fixed;
+	top: 0;
+	left: 0;
+	display: none;
+	align-items: center;
+	justify-content: center;
+	z-index: 99;
+}
+
+.full-img img {
+	width: 90%;
+	max-width: 600px;
+}
+
+.full-img span {
+	position: absolute;
+	top: 5%;
+	right: 5%;
+	font-size: 30px;
+	color: #fff;
+	cursor: pointer;
 }
 
 .view__product {
@@ -296,7 +342,6 @@ body {
 	opacity: 0.9;
 	width: 1156px;
 	height: 70%;
-	overflow: initial;
 	border-collapse: collapse;
 }
 
