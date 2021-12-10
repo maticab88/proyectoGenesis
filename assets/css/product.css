@@ -26,7 +26,7 @@ body {
 }
 
 .header__menu {
-	background-color: var(--bg-black);
+	background-color: #171923;
 	display: grid;
 	grid-template-columns: repeat(6, 1fr);
 	grid-template-rows: 1fr;
@@ -41,6 +41,10 @@ body {
 	padding: 15px;
 	color: var(--grey);
 	font-weight: bolder;
+}
+
+.header__link.active {
+	background-color: #0b0d17;
 }
 
 .header__link--red {
@@ -168,7 +172,7 @@ body {
 .product__icon {
 	margin-top: 5rem;
 	display: grid;
-	grid-template-columns: repeat(5, 1fr);
+	grid-template-columns: repeat(4, 1fr);
 	grid-template-rows: 1fr;
 	grid-column-gap: 0px;
 	grid-row-gap: 0px;
@@ -182,6 +186,12 @@ body {
 
 .product__item:nth-child(even) {
 	background-color: #e5e5e5;
+}
+
+.item-2 {
+	background-image: url('/assets/img/04.png');
+	background-repeat: no-repeat;
+	background-position: center;
 }
 
 .item-3 {
