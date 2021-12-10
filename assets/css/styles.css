@@ -247,6 +247,7 @@ html {
 	background-color: var(--red);
 	color: #fff;
 	font-size: 20px;
+	border-radius: 5px;
 }
 
 .planGenesis__btns {
@@ -410,6 +411,7 @@ html {
 	font-size: 22px;
 	text-align: center;
 	margin-left: 3rem;
+	border-radius: 5px;
 }
 
 .planes .overlay__models {
