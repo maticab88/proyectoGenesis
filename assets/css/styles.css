@@ -569,6 +569,7 @@ html {
 .categoria__title {
 	display: flex;
 	flex-direction: column;
+	margin-top: -50px;
 }
 
 .categoria__title h2 {

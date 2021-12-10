@@ -11,6 +11,12 @@
 			rel="stylesheet"
 		/>
 
+		<!-- swiperjs -->
+		<link
+			rel="stylesheet"
+			href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+		/>
+
 		<!-- TODO: BORRAR EL CODIGO DOCUMENTADO -->
 		<!-- <link rel="stylesheet" href="/assets/css/styles.css" /> -->
 		<!-- <link rel="stylesheet" href="/assets/css/product.css" /> -->
@@ -68,7 +74,7 @@
 
 		<section class="product">
 			<div class="producto__img">
-				<img src="/assets/img/WAVEs110_001 1.png" alt="" />
+				<img src="/assets/img/WAVEs110_10.png" alt="" />
 			</div>
 			<div class="producto__info" id="description">
 				<div class="product__info-header">
@@ -202,7 +208,107 @@
 				<hr />
 			</div>
 
-			<img src="/assets/img/WAVEs110_002 2.png" class="product__view" alt="" />
+			<!-- Slider main container -->
+			<div class="swiper">
+				<!-- Additional required wrapper -->
+				<div class="swiper-wrapper">
+					<!-- Slides -->
+
+					<div class="swiper-slide">
+						<img
+							src="/assets/img/WAVEs110_11.png"
+							class="product__view"
+							alt=""
+						/>
+					</div>
+
+					<div class="swiper-slide">
+						<img
+							src="/assets/img/WAVEs110_10.png"
+							class="product__view"
+							alt=""
+						/>
+					</div>
+
+					<div class="swiper-slide">
+						<img
+							src="/assets/img/WAVEs110_09.png"
+							class="product__view"
+							alt=""
+						/>
+					</div>
+
+					<div class="swiper-slide">
+						<img
+							src="/assets/img/WAVEs110_08.png"
+							class="product__view"
+							alt=""
+						/>
+					</div>
+
+					<div class="swiper-slide">
+						<img
+							src="/assets/img/WAVEs110_07.png"
+							class="product__view"
+							alt=""
+						/>
+					</div>
+
+					<div class="swiper-slide">
+						<img
+							src="/assets/img/WAVEs110_06.png"
+							class="product__view"
+							alt=""
+						/>
+					</div>
+
+					<div class="swiper-slide">
+						<img
+							src="/assets/img/WAVEs110_05.png"
+							class="product__view"
+							alt=""
+						/>
+					</div>
+
+					<div class="swiper-slide">
+						<img
+							src="/assets/img/WAVEs110_04.png"
+							class="product__view"
+							alt=""
+						/>
+					</div>
+
+					<div class="swiper-slide">
+						<img
+							src="/assets/img/WAVEs110_03.png"
+							class="product__view"
+							alt=""
+						/>
+					</div>
+
+					<div class="swiper-slide">
+						<img
+							src="/assets/img/WAVEs110_02.png"
+							class="product__view"
+							alt=""
+						/>
+					</div>
+
+					<div class="swiper-slide">
+						<img
+							src="/assets/img/WAVEs110_01.png"
+							class="product__view"
+							alt=""
+						/>
+					</div>
+				</div>
+				<!-- If we need pagination -->
+				<div class="swiper-pagination"></div>
+
+				<!-- If we need navigation buttons -->
+				<div class="swiper-button-prev"></div>
+				<div class="swiper-button-next"></div>
+			</div>
 		</section>
 
 		<section class="fichaTecnica" id="ficha">
@@ -341,5 +447,20 @@
 		</footer>
 
 		<script src="/assets/js/galeria.js"></script>
+		<!-- swiperjs -->
+		<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+		<script>
+			const swiper = new Swiper('.swiper', {
+				// Optional parameters
+				loop: true,
+
+				// Navigation arrows
+				navigation: {
+					nextEl: '.swiper-button-next',
+					prevEl: '.swiper-button-prev',
+				},
+			});
+		</script>
 	</body>
 </html>
