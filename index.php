@@ -78,7 +78,7 @@
 	</div>
 
 	<div id="carousel3d">
-		<carousel-3d :perspective="0" :space="400" :display="5" :controls-prev-html="'&#10092;'" :controls-next-html="'&#10093;'" :controls-width="50" :controls-height="80" :clickable="true">
+		<carousel-3d :perspective="0" :space="400" :display="3" :controls-prev-html="'&#10092;'" :controls-next-html="'&#10093;'" :controls-width="50" :controls-height="80" :clickable="true">
 			<slide :index="0">
 				<img src="assets/img/HONDA XR 150L 2.png" alt="" />
 				<div class="container_info">
