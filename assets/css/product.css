@@ -431,3 +431,39 @@ body {
 .facebook__link {
 	color: #fff;
 }
+
+/*  ------------------- MEDIA QUERYS PARA EL BODY DE PRODUCTOS SCOOTER ------------------- */
+
+@media (max-width: 850px) {
+	.scooter__product {
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+	}
+
+	.scooter__categoria {
+		width: 100%;
+		margin-bottom: 35px;
+	}
+}
+
+@media (max-width: 750px) {
+	.product__item {
+		display: flex;
+		flex-direction: column;
+	}
+}
+
+@media (max-width: 500px) {
+	.item__img img {
+		width: 250px;
+	}
+
+	.item__container {
+		width: 250px;
+	}
+
+	.product__list {
+		align-items: center;
+	}
+}
