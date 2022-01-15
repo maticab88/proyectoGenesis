@@ -91,6 +91,9 @@
 
 <!-- swiperjs para la sección de productos-->
 <script src="/assets/js/product_swiper.js"></script>
+
+<script src="/assets/js/adaptabilidad_nav.js"></script>
+
 </body>
 
 </html>

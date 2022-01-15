@@ -8,9 +8,9 @@
                     </a>
                 </div>
 
-                <div class="nav__link">
+                <div class="nav__link animate__animated animate__fadeInDown">
                     <a href="/index.php" class="nav__links">INICIO </a>
-                    <div class="nav__link nav__link--dropdown">
+                    <div class="nav__link--dropdown ">
                         <a href="#producto" class="nav__links product__btn">PRODUCTOS</a>
                         <i class="bx bx-chevron-down"></i>
                         <div class="dropdown-content">
@@ -21,10 +21,18 @@
                     </div>
                     <a href="/view/contacto.php" class="nav__links">CONTACTO</a>
                     <a href="#preguntas" class="nav__links">PREGUNTAS FRECUENTES</a>
+                    <div class="btn__show">
+                        <a href="#" class="nav__btns nav__btns--iniciar_show">Inicio de sessión</a>
+                        <a href="#" class="nav__btns nav__btns--crear_show">Crear cuenta</a>
+                    </div>
+
                 </div>
             </div>
             <div class="nav__btn">
                 <a href="#" class="nav__btns nav__btns--iniciar">Inicio de sessión</a>
                 <a href="#" class="nav__btns nav__btns--crear">Crear cuenta</a>
+                <div>
+                    <i class='bx bx-menu' id="btn__menu"></i>
+                </div>
             </div>
         </nav>

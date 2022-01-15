@@ -66,6 +66,8 @@ html {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	position: relative;
+	z-index: 1000;
 }
 
 .nav__link--dropdown {
@@ -113,6 +115,28 @@ html {
 	margin: 0 8px;
 }
 
+.nav__btns--iniciar_show {
+	display: none;
+	padding: 8px;
+	border-radius: 5px;
+	border-style: solid;
+	background-color: var(--red);
+	border-style: none;
+	color: #fff;
+	font-size: 10px;
+}
+
+.nav__btns--crear_show {
+	display: none;
+	background-color: var(--blue);
+	padding: 8px;
+	border-radius: 5px;
+	border-style: solid;
+	border-style: none;
+	color: #fff;
+	font-size: 10px;
+}
+
 .nav__btn {
 	padding: 5px;
 	text-align: center;
@@ -121,9 +145,6 @@ html {
 .btn__search {
 	margin-right: 2rem;
 	color: black;
-}
-
-.nav__btns {
 }
 
 .nav__btns--iniciar {
@@ -146,10 +167,12 @@ html {
 	font-size: 10px;
 }
 
-/*  ------------ carousels ------------*/
-
-.carousel__contenedor {
+#btn__menu {
+	font-size: 30px;
+	display: none;
 }
+
+/*  ------------ carousels ------------*/
 
 .carousel__anterior,
 .carousel__siguiente {
@@ -795,19 +818,17 @@ html {
 .footer {
 	border-top: solid 15px var(--red);
 	background: var(--bg-black);
-	/* background: red; */
 	display: flex;
 	flex-wrap: wrap;
 	text-align: center;
 	justify-content: space-around;
-	height: 60vh;
 	padding: 25px 0;
 }
 
 .col-1-footer {
 	margin-top: 2rem;
-	width: 20%;
 	text-align: left;
+	flex-basis: 20%;
 }
 
 .col-1-footer p {
@@ -852,7 +873,8 @@ html {
 .col-2-footer {
 	margin-top: 2rem;
 	background-color: var(--bg-black);
-	width: 20%;
+	min-width: 20%;
+	/* flex-basis: 35%; */
 }
 
 .col-2-footer__title {
@@ -878,7 +900,7 @@ html {
 /* ----------------------  */
 .col-3-footer {
 	margin-top: 2rem;
-	width: 20%;
+	min-width: 20%;
 	text-align: left;
 }
 
@@ -894,6 +916,7 @@ html {
 	list-style: none;
 	text-align: left;
 	margin: 10px 0;
+	display: flex;
 }
 
 .col-3-footer ul li small {
@@ -909,7 +932,7 @@ html {
 /*  -------------  */
 .col-4-footer {
 	margin-top: 2rem;
-	width: 20%;
+	min-width: 20%;
 	text-align: left;
 }
 
@@ -945,13 +968,17 @@ html {
 /* ------------ */
 
 .footer__derechos {
-	height: 50px;
 	display: flex;
 	width: 100%;
 	align-self: flex-end;
 	justify-content: space-evenly;
 	align-items: center;
 	color: #fff;
+	flex-wrap: wrap;
+}
+
+.footer__derechos > * {
+	margin-top: 15px;
 }
 
 .footer__link {
@@ -962,3 +989,222 @@ html {
 .footer__link a {
 	color: #fff;
 }
+
+/* ------------------- MEDIA QUERYS -------------------*/
+
+/*  ------------------- MEDIA QUERYS PARA EL NAV ------------------- */
+@media (max-width: 850px) {
+	.nav {
+		justify-content: space-between;
+		padding: 30px;
+	}
+
+	.nav__btn {
+		display: flex;
+		width: 250px;
+		justify-content: space-between;
+	}
+
+	#btn__menu {
+		display: inline-block;
+	}
+
+	.nav__link {
+		position: absolute;
+		top: 100px;
+		width: 100%;
+		left: 0;
+		flex-direction: column;
+		padding: 10px;
+		background: var(--grey);
+		display: none;
+		z-index: 100;
+		align-items: flex-start;
+		height: 150px;
+		justify-content: space-around;
+	}
+
+	.nav__link a {
+		margin-left: 20px;
+	}
+
+	.header--active {
+		display: flex;
+	}
+}
+
+@media (max-width: 500px) {
+	.nav__btns--iniciar,
+	.nav__btns--crear {
+		display: none;
+	}
+
+	.nav__btn {
+		width: 10%;
+	}
+
+	.btn__show {
+		display: flex;
+		width: 100%;
+		justify-content: space-around;
+		height: 100%;
+		align-items: flex-end;
+	}
+
+	.nav__btns--iniciar_show,
+	.nav__btns--crear_show {
+		display: inline-block;
+	}
+}
+
+/*  ------------------- MEDIA QUERYS PARA EL NAV ------------------- */
+
+/*  ------------------- MEDIA QUERYS PARA LA SECCIÓN DE CONTACTO ------------------- */
+@media (max-width: 800px) {
+	.planGenesis {
+		flex-direction: column;
+		justify-content: center;
+		height: 100%;
+		gap: 0px;
+		text-align: center;
+	}
+
+	.stayHouse {
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: repeat(2, 1fr);
+		grid-column-gap: 0px;
+		grid-row-gap: 0px;
+	}
+}
+
+@media (max-width: 600px) {
+	.stayHouse {
+		height: 100%;
+	}
+
+	.stayHouse__info {
+		padding: 0;
+		align-items: center;
+	}
+
+	.stayHouse__title {
+		margin: 15px 10px;
+	}
+
+	.stayHouse__content {
+		width: 100%;
+		margin-left: 0;
+		font-size: 20px;
+		text-align: center;
+		padding: 10px;
+	}
+
+	.stayHouse__btn {
+		margin-left: 0;
+		margin-bottom: 25px;
+	}
+}
+
+/*  ------------------- END MEDIA QUERYS PARA LA SECCIÓN DE CONTACTO ------------------- */
+
+/*  ------------------- MEDIA QUERYS PARA MODELOS DESTACADOS ------------------- */
+
+/* TODO: REVISAR EL COMPONENTE DE VUE PARA HACERLO MÁS ADAPTABLE */
+@media (max-width: 750px) {
+	.modelosDestacados__title {
+		font-size: 25px;
+	}
+}
+
+@media (max-width: 400px) {
+	.modelosDestacados__title {
+		font-size: 20px;
+	}
+}
+
+/*  ------------------- END MEDIA QUERYS PARA MODELOS DESTACADOS ------------------- */
+
+/*  ------------------- MEDIA QUERYS PARA CATEGORIAS ------------------- */
+
+@media (max-width: 1077px) {
+	/* .categoria__container {
+		flex-direction: column;
+		align-items: center;
+	} */
+
+	.categoria__item1,
+	.categoria__item2,
+	.categoria__item3 {
+		width: 210px;
+		height: 200px;
+	}
+}
+
+@media (max-width: 750px) {
+	.categoria__container {
+		flex-direction: column;
+		align-items: center;
+		justify-content: end;
+	}
+
+	.categoria__item1,
+	.categoria__item2,
+	.categoria__item3 {
+		margin: 10px 10px;
+	}
+
+	.categoria__title {
+		margin-top: 25px;
+	}
+
+	.categoria__title h2 {
+		font-size: 35px;
+	}
+}
+
+/*  ------------------- END MEDIA QUERYS PARA CATEGORIAS ------------------- */
+
+/*  ------------------- MEDIA QUERYS PARA PREGUNTAS FRECUENTES ------------------- */
+
+@media (max-width: 750px) {
+	.preguntasFrecuentes {
+		min-height: 120vh;
+	}
+}
+
+/*  ------------------- END MEDIA QUERYS PARA PREGUNTAS FRECUENTES ------------------- */
+
+/*  ------------------- MEDIA QUERYS PARA FOOTER ------------------- */
+
+@media (max-width: 800px) {
+	.col-1-footer,
+	.col-2-footer,
+	.col-3-footer,
+	.col-4-footer {
+		flex-basis: 35%;
+	}
+}
+
+@media (max-width: 650px) {
+	.col-3-footer {
+		flex-basis: 55%;
+	}
+}
+
+@media (max-width: 450px) {
+	.footer__derechos {
+		border-top: 1px solid #fff;
+		margin-top: 15px;
+	}
+
+	.footer__derechos p {
+		padding: 10px;
+	}
+
+	.footer__link {
+		padding: 10px;
+	}
+}
+
+/*  ------------------- END MEDIA QUERYS PARA FOOTER ------------------- */
