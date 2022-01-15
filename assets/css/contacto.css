@@ -103,3 +103,35 @@
 .contactanos__row-3 small {
 	color: #000;
 }
+
+/* MEDIAS QUERYS  */
+
+@media (max-width: 1050px) {
+	.contactanos__container {
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+		padding: 80px;
+	}
+
+	.contactanos__info {
+		margin-top: 35px;
+	}
+}
+
+@media (max-width: 650px) {
+	.contactanos__form .form input,
+	.contactanos__form .form textarea {
+		width: 100%;
+	}
+
+	.contactos__btn {
+		width: 100%;
+	}
+}
+
+@media (max-width: 450px) {
+	.contactanos__container {
+		padding: 50px;
+	}
+}

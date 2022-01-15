@@ -13,7 +13,7 @@
 <section class="contactanos__container">
 	<div class="contactanos__form">
 		<h3 class="contactanos__title">DEJANOS UN MENSAJE</h3>
-		<form action="">
+		<form action="" class="form">
 			<input type="text" placeholder="Nombre" />
 			<input type="email" placeholder="Email" />
 			<input type="number" placeholder="Telefono" />
