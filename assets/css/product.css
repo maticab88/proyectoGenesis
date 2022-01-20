@@ -217,9 +217,10 @@ body {
 .product__imagenes {
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
-	grid-template-rows: repeat(2, 1fr);
-	grid-column-gap: 0px;
-	grid-row-gap: 0px;
+}
+
+.product__imagen img {
+	width: 100%;
 }
 
 .imagen-1 {

@@ -81,6 +81,7 @@
 </section>
 
 <section class="product__imagenes" id="galeria">
+
 	<div class="full-img" id="fulImgBox">
 		<img src="/assets/img/Rectangle 30.png" id="fullImg" alt="" />
 		<span onclick="closeImg()">X</span>
