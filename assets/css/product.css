@@ -56,7 +56,6 @@ body {
 	margin-top: 6rem;
 	margin-left: auto;
 	margin-right: auto;
-	height: 550px;
 	width: 70%;
 	display: grid;
 	grid-column-gap: 0px;
@@ -69,9 +68,9 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	width: 500px;
-	height: 450px;
-	margin-right: 45px;
+	/* width: 500px; */
+	/* height: 450px; */
+	/* margin-right: 45px; */
 }
 
 .producto__img img {
@@ -221,7 +220,6 @@ body {
 	grid-template-rows: repeat(2, 1fr);
 	grid-column-gap: 0px;
 	grid-row-gap: 0px;
-	height: 500px;
 }
 
 .imagen-1 {
@@ -282,6 +280,7 @@ body {
 }
 
 .swiper {
+	/* FIXME: estaba en 100%  */
 	width: 100%;
 	height: 100%;
 }
@@ -307,7 +306,7 @@ body {
 }
 
 .swiper-slide img {
-	height: 80%;
+	height: 100%;
 }
 
 .full-img {
@@ -364,9 +363,10 @@ body {
 	margin-top: 29px;
 }
 
-.product__view {
+/* FIXME: REVISAR AQUI */
+/* .product__view {
 	margin-top: 61px;
-}
+} */
 
 .fichaTecnica {
 	background-image: url('/assets/img/seccion_product.png');
@@ -432,7 +432,7 @@ body {
 	color: #fff;
 }
 
-/*  ------------------- MEDIA QUERYS PARA EL BODY DE PRODUCTOS SCOOTER ------------------- */
+/*  ------------------- MEDIA QUERYS PARA LA LISTA DE PRODUCTOS ------------------- */
 
 @media (max-width: 850px) {
 	.scooter__product {
@@ -467,3 +467,78 @@ body {
 		align-items: center;
 	}
 }
+
+/*  ------------------- END MEDIA QUERYS PARA LA LISTA DE PRODUCTOS ------------------- */
+
+/*  ------------------- MEDIA QUERYS PARA LA VISTA DE PRODUCTO INDIVIDUAL ------------------- */
+
+@media (max-width: 1200px) {
+	.product {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.product__imagenes {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+@media (max-width: 850px) {
+	.header__menu {
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: column;
+	}
+
+	.btn__cotizar {
+		width: 100%;
+		text-align: center;
+	}
+}
+
+@media (max-width: 650px) {
+	.product__icon {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.product__imagenes {
+		grid-template-columns: repeat(1, 1fr);
+	}
+
+	.swiper-slide img {
+		height: 70%;
+	}
+
+	.swiper-button-prev {
+		left: 60px;
+	}
+
+	.swiper-button-next {
+		right: 60px;
+	}
+}
+
+@media (max-width: 450px) {
+	.swiper-slide img {
+		height: 43%;
+	}
+
+	.swiper-button-prev {
+		left: 20px;
+	}
+
+	.swiper-button-next {
+		right: 20px;
+	}
+
+	.swiper-button-next,
+	.swiper-button-prev {
+		height: 20px;
+	}
+}
+
+/* .swiper-button-next, .swiper-button-prev */
+
+/*  ------------------- END MEDIA QUERYS PARA LA VISTA DE PRODUCTO INDIVIDUAL ------------------- */

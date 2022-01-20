@@ -90,25 +90,25 @@
 		<img src="/assets/img/Rectangle 30.png" onclick="openFullImg(this.src)" alt="" />
 	</div>
 
-	<div class="product__imagen imagen-1">
+	<div class="product__imagen imagen-2">
 		<img src="/assets/img/Rectangle 36.png" onclick="openFullImg(this.src)" alt="" />
 	</div>
-	<div class="product__imagen imagen-2">
+	<div class="product__imagen imagen-3">
 		<img src="/assets/img/Rectangle 33.png" onclick="openFullImg(this.src)" alt="" />
 	</div>
-	<div class="product__imagen imagen-3">
+	<div class="product__imagen imagen-4">
 		<img src="/assets/img/Rectangle 37.png" onclick="openFullImg(this.src)" alt="" />
 	</div>
-	<div class="product__imagen imagen-4">
+	<div class="product__imagen imagen-5">
 		<img src="/assets/img/Rectangle 34.png" onclick="openFullImg(this.src)" alt="" />
 	</div>
-	<div class="product__imagen imagen-5">
+	<div class="product__imagen imagen-6">
 		<img src="/assets/img/Rectangle 41.png" onclick="openFullImg(this.src)" alt="" />
 	</div>
-	<div class="product__imagen imagen-6">
+	<div class="product__imagen imagen-7">
 		<img src="/assets/img/Rectangle 32.png" onclick="openFullImg(this.src)" alt="" />
 	</div>
-	<div class="product__imagen imagen-7">
+	<div class="product__imagen imagen-8">
 		<img src="/assets/img/Rectangle 35.png" onclick="openFullImg(this.src)" alt="" />
 	</div>
 </section>
