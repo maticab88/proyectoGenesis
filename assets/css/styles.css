@@ -1180,9 +1180,12 @@ html {
 @media (max-width: 800px) {
 	.col-1-footer,
 	.col-2-footer,
-	.col-3-footer,
 	.col-4-footer {
 		flex-basis: 35%;
+	}
+
+	.col-3-footer {
+		flex-basis: 100%;
 	}
 }
 
@@ -1193,6 +1196,18 @@ html {
 }
 
 @media (max-width: 450px) {
+	.footer {
+		flex-direction: column;
+	}
+
+	.col-1-footer,
+	.col-2-footer,
+	.col-3-footer,
+	.col-4-footer {
+		padding: 10px;
+		width: 100%;
+	}
+
 	.footer__derechos {
 		border-top: 1px solid #fff;
 		margin-top: 15px;
