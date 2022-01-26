@@ -140,6 +140,7 @@
 	</div>
 
 	<div class="categoria__container">
+
 		<a href="/view/scooter.php">
 			<div class="categoria__item1">
 				<h3>CUB / SCOOTERS</h3>

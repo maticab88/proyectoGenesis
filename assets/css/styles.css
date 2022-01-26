@@ -579,7 +579,7 @@ html {
 /* ----------------- categoria -----------------*/
 .categoria {
 	background: url('/assets/img/IMAGEN\ S05.jpg');
-	height: 100vh;
+	min-height: 100vh;
 	width: 100%;
 	background-size: cover;
 	background-position: center;
@@ -592,7 +592,6 @@ html {
 .categoria__title {
 	display: flex;
 	flex-direction: column;
-	margin-top: -50px;
 }
 
 .categoria__title h2 {
@@ -698,6 +697,7 @@ html {
 }
 
 .categoria__container {
+	margin-top: 65px;
 	bottom: 50px;
 	position: relative;
 	width: 80%;
@@ -714,19 +714,17 @@ html {
 /* -------------- preguntas frecuentes ------------- */
 
 .preguntasFrecuentes {
+	margin-top: 8rem;
+	margin-bottom: 8rem;
 	width: 100%;
-	min-height: 100vh;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 }
 
 .preguntasFrecuentes__container {
-	height: 70%;
-	/* max-width: 80rem; */
+	height: 100%;
 	margin: auto;
-	/* padding: 0 1.5rem; */
-	/* background-color: var(--grey); */
 	display: flex;
 }
 
@@ -1148,6 +1146,10 @@ html {
 		justify-content: end;
 	}
 
+	.categoria__container a {
+		margin: 10px 0;
+	}
+
 	.categoria__item1,
 	.categoria__item2,
 	.categoria__item3 {
@@ -1155,7 +1157,7 @@ html {
 	}
 
 	.categoria__title {
-		margin-top: 25px;
+		margin-top: 15px;
 	}
 
 	.categoria__title h2 {
@@ -1185,7 +1187,7 @@ html {
 	}
 
 	.col-3-footer {
-		flex-basis: 100%;
+		flex-basis: 50%;
 	}
 }
 
