@@ -435,23 +435,25 @@ body {
 
 /*  ------------------- MEDIA QUERYS PARA LA LISTA DE PRODUCTOS ------------------- */
 
-@media (max-width: 850px) {
+@media (max-width: 900px) {
 	.scooter__product {
 		display: flex;
 		flex-direction: column;
 		flex-wrap: wrap;
+		padding-left: 0px;
+		padding-right: 0px;
+		align-items: center;
 	}
 
 	.scooter__categoria {
-		width: 100%;
-		margin-bottom: 35px;
+		margin-bottom: 55px;
+		width: 70%;
 	}
-}
 
-@media (max-width: 750px) {
 	.product__item {
 		display: flex;
-		flex-direction: column;
+		flex-wrap: wrap;
+		justify-content: center;
 	}
 }
 
