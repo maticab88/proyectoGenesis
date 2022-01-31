@@ -364,28 +364,25 @@ body {
 	margin-top: 29px;
 }
 
-/* FIXME: REVISAR AQUI */
-/* .product__view {
-	margin-top: 61px;
-} */
-
 .fichaTecnica {
 	background-image: url('/assets/img/seccion_product.png');
-	height: 100vh;
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	height: 100%;
+	padding: 3rem;
 }
 
 .table {
 	background-color: #f4f4f4;
 	border-radius: 5px;
 	opacity: 0.9;
-	width: 1156px;
-	height: 70%;
+	/* width: 1156px; */
+	width: 80%;
+	/* height: 100%; */
 	border-collapse: collapse;
 }
 
@@ -395,7 +392,6 @@ body {
 
 .header__table h2 {
 	margin: auto;
-	width: 339px;
 	text-align: center;
 	font-size: 45px;
 }
@@ -406,6 +402,8 @@ body {
 	width: 99px;
 	border: 1px solid var(--red);
 }
+
+/* TODO: LA TABLA EMPIEZA AQUI */
 
 .table__body {
 	width: 100%;
@@ -427,6 +425,9 @@ body {
 .table__body tbody tr td {
 	opacity: 1;
 	padding: 0.5rem 0.5rem;
+	/* TODO: QUITAR EL DISPLAY FLEX PARA DESKTOP*/
+	/* display: flex; */
+	height: 100%;
 }
 
 .facebook__link {
@@ -545,3 +546,22 @@ body {
 /* .swiper-button-next, .swiper-button-prev */
 
 /*  ------------------- END MEDIA QUERYS PARA LA VISTA DE PRODUCTO INDIVIDUAL ------------------- */
+
+/*  ------------------- START MEDIA QUERYS PARA FICHA TECNICA ------------------- */
+@media (max-width: 550px) {
+	.table__body tbody tr td {
+		opacity: 1;
+		padding: 0.5rem 0.5rem;
+		display: flex;
+		height: 100%;
+	}
+
+	.header__table {
+		padding: 5px;
+	}
+
+	.header__table h2 {
+		font-size: 20px;
+	}
+}
+/*  ------------------- END MEDIA QUERYS PARA FICHA TECNICA ------------------- */

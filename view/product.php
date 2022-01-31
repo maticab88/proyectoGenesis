@@ -180,13 +180,16 @@
 </section>
 
 <section class="fichaTecnica" id="ficha">
+
 	<div class="table">
+
 		<div class="header__table">
 			<h2>FICHA TÉCNICA</h2>
 			<hr />
 		</div>
 
 		<table class="table__body">
+
 			<thead>
 				<tr>
 					<td>Motors</td>
@@ -235,6 +238,8 @@
 					<td>4 velocidades</td>
 				</tr>
 			</tbody>
+
+
 		</table>
 	</div>
 </section>
