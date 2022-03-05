@@ -14,7 +14,7 @@ body {
 }
 
 .header__content {
-	height: 75vh;
+	/* height: 75vh; */
 }
 
 .header__img {
@@ -512,7 +512,7 @@ body {
 	}
 
 	.swiper-slide img {
-		height: 70%;
+		height: 40%;
 	}
 
 	.swiper-button-prev {
@@ -526,7 +526,7 @@ body {
 
 @media (max-width: 450px) {
 	.swiper-slide img {
-		height: 43%;
+		width: 80%;
 	}
 
 	.swiper-button-prev {

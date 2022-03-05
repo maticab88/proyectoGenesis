@@ -214,8 +214,6 @@ html {
 
 .carousel__elemento img {
 	object-fit: fill;
-	height: 100vh;
-	width: 100%;
 }
 
 .glider-dot {
