@@ -50,7 +50,7 @@
             /*$vencimiento = "DATE_ADD($fecha, INTERVAL 1 MONTH)";*/
             $total = $alicuota + $derechoadm + $sellado + $cargoadm;
 
-            $sql2 = "INSERT INTO pagos VALUES('$solicitud', '$precio', '$alicuota', '$derechoadm', '$cargoadm', '$sellado', '$total', '$abono', '$cuotaS', '$monto', '$vencimiento', 'No hay observacines', '2', '0', 'LICITO', 'D', '$cuotas')";
+            echo $sql2 = "INSERT INTO pagos VALUES('$solicitud', '$precio', '$alicuota', '$derechoadm', '$cargoadm', '$sellado', '$total', '$abono', '$cuotaS', '$monto', '$vencimiento', 'No hay observacines', '2', '0', 'LICITO', 'D', '$cuotas')";
             $insert2 = mysqli_query($conexion, $sql2);
             if ($insert2){
                 echo "DATOS INSERTADOS CORRECTAMENTE";
