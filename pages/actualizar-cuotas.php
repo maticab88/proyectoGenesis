@@ -10,14 +10,27 @@
         $query2 = mysqli_query($conexion, "SELECT * FROM pagos WHERE solicitud = $solicitud");  
         $pagos = mysqli_fetch_assoc($query2);
         $total = $pagos['Total'];
-
+        $monto = $pagos['Cuotasig'];
         mysqli_query($conexion, "SET NAMES 'utf8'"); 
         
         $SeguroD = $sellado + $seguro;
         $total = $total + $seguro;
-        $sql = "UPDATE pagos SET Sellado='$SeguroD', Total='$total', Observaciones='$observaciones', Cuotas='$cuota', Abono='$adelanto'  WHERE Solicitud=$solicitud";
+        /*$sql = "UPDATE pagos SET Sellado='$SeguroD', Total='$total', Observaciones='$observaciones', Cuota='$cuota', Abono='$adelanto'  WHERE Solicitud=$solicitud";*/
         $update = mysqli_query($conexion, $sql); 
+        $sql = "UPDATE pagos SET Sellado='$SeguroD'  WHERE Solicitud=$solicitud";
+        $update = mysqli_query($conexion, $sql); 
+        $sql = "UPDATE pagos SET Total='$total'  WHERE Solicitud=$solicitud";
+        $update = mysqli_query($conexion, $sql);
+        $sql = "UPDATE pagos SET Observaciones='$observaciones'  WHERE Solicitud=$solicitud";
+        $update = mysqli_query($conexion, $sql);
+        $sql = "UPDATE pagos SET Cuota='$cuota'  WHERE Solicitud=$solicitud";
+        $update = mysqli_query($conexion, $sql);
+        $sql = "UPDATE pagos SET Abono='$adelanto'  WHERE Solicitud=$solicitud";
+        $update = mysqli_query($conexion, $sql);
 
+        if($cuota > 12){
+            $monto = $monto - 1000;
+        }
 
         if($update){
             echo "Los datos se han actualizado correctamente";
