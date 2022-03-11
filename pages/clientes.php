@@ -10,9 +10,12 @@
         include 'error.php';
     }
     else{
-        $fecha = $_POST['fecha'];
-         echo $fechastr =strtotime($fecha);
-        $mes = date("Y", $fechastr);
+        $fecha = $_POST['fecha']
+        $fechastr =strtotime($fecha);
+        $año = date("Y", $fechastr);
+        $mes = date("m", $fechastr);
+        $dia = date("m", $fechastr);
+        $vencimiento = $dia."/".$mes."/".$año;
         $vendedor = $_POST['vendedor'];
         $equipo = $_POST['equipo'];
         $indice = $_POST['indice'];
@@ -60,7 +63,7 @@
             else{
                 echo "ERROR".mysqli_error($conexion);
             }
-            var_dump($mes);
+            var_dump($vencimiento);
 
             $sql3 = "INSERT INTO usuarios VALUES('$dni', '$mail', '$solicitud')";
             $insert3 = mysqli_query($conexion, $sql3);
