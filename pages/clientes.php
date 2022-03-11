@@ -10,7 +10,7 @@
         include 'error.php';
     }
     else{
-        $fecha = strotime($_POST['fecha']);
+        $fecha = $_POST['fecha'];
         $vendedor = $_POST['vendedor'];
         $equipo = $_POST['equipo'];
         $indice = $_POST['indice'];
@@ -50,9 +50,7 @@
             /*$vencimiento = "DATE_ADD($fecha, INTERVAL 1 MONTH)";*/
             $total = $alicuota + $derechoadm + $sellado + $cargoadm;
             $debe = $total;
-            
-
-            echo $sql2 = "INSERT INTO pagos VALUES('$solicitud', '$precio', '$alicuota', '$derechoadm', '$cargoadm', '$sellado', '$total', '$abono','$debe', '$cuotaS', '$monto', '9', 'No hay observaciones', '2', '0', 'LICITO', 'D', '$cuotas')";
+            echo $sql2 = "INSERT INTO pagos VALUES('$solicitud', '$precio', '$alicuota', '$derechoadm', '$cargoadm', '$sellado', '$total', '$abono','$debe', '$cuotaS', '$monto', '9', 'No hay observacines', '2', '0', 'LICITO', 'D', '$cuotas')";
             $insert2 = mysqli_query($conexion, $sql2);
             if ($insert2){
                 echo "DATOS INSERTADOS CORRECTAMENTE";
