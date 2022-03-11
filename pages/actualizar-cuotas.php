@@ -17,7 +17,7 @@
         $SeguroD = $sellado + $seguro;
         $total = $total + $seguro;
         $abono = $pagos['Abono'] + $_POST['abono'];
-        $debe = $abono - $total;
+        $debe = $total - $abono;
 
         $sql = "UPDATE pagos SET Sellado='$SeguroD', Total='$total', Observaciones='$observaciones', Cuotas='$cuota', Adelanto='$adelanto', Abono='$abono', Debe='$debe'  WHERE Solicitud=$solicitud";
         $update = mysqli_query($conexion, $sql); 
