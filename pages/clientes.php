@@ -15,7 +15,6 @@
         $año = date("Y", $fechastr);
         $mes = date("m", $fechastr);
         $dia = date("m", $fechastr);
-        $vencimiento = "$dia"."/"."$mes"."/"."$año";
         $vendedor = $_POST['vendedor'];
         $equipo = $_POST['equipo'];
         $indice = $_POST['indice'];
