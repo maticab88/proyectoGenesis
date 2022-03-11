@@ -31,7 +31,7 @@
             }
         }
         if(isset($observaciones)){
-            $sql4 = "UPDATE pagos SET Observaciones='$observaciones'  WHERE Solicitud=$solicitud";
+          echo  $sql4 = "UPDATE pagos SET Observaciones='$observaciones'  WHERE Solicitud=$solicitud";
             $update = mysqli_query($conexion, $sql4);
             if($update){
                 echo "Los datos se han actualizado correctamente";
