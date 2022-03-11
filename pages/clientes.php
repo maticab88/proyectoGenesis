@@ -13,7 +13,7 @@
         $fecha = $_POST['fecha'];
         $fechastr =strtotime($fecha);
         $mes = date("m", $fechastr);
-        $dia = date("d", $fechastr);
+        $dia = "10";
         $año = date("Y", $fechastr);
         $vencimiento = $dia.'/'.$mes.'/'.$año;
         $vendedor = $_POST['vendedor'];
