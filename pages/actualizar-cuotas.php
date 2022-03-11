@@ -32,8 +32,8 @@
         }
         if(isset($observaciones)){
             echo $sql4 = "UPDATE pagos SET Observaciones='$observaciones' WHERE Solicitud=$solicitud";
-            $update = mysqli_query($conexion, $sql4);
-            if($update){
+            $update2 = mysqli_query($conexion, $sql4);
+            if($update2){
                 echo "Los datos se han actualizado correctamente";
                 include 'correcto.php';
             }else {
@@ -44,8 +44,8 @@
         
         if(isset($cuota)){
            echo $sql5 = "UPDATE pagos SET Cuota='$cuota'  WHERE Solicitud=$solicitud";
-            $update = mysqli_query($conexion, $sql5);
-            if($update){
+            $update3 = mysqli_query($conexion, $sql5);
+            if($update3){
                 echo "Los datos se han actualizado correctamente";
                 include 'correcto.php';
             }else {
@@ -56,8 +56,8 @@
         
         if(isset($cuota)){
             $sql5 = "UPDATE pagos SET Cuota='$cuota'  WHERE Solicitud=$solicitud";
-            $update = mysqli_query($conexion, $sql5);
-            if($update){
+            $update4 = mysqli_query($conexion, $sql5);
+            if($update4){
                 echo "Los datos se han actualizado correctamente";
                 include 'correcto.php';
             }else {
@@ -68,8 +68,8 @@
 
         if(isset($adelanto)){
             $sql6 = "UPDATE pagos SET Abono='$adelanto'  WHERE Solicitud=$solicitud";
-            $update = mysqli_query($conexion, $sql6);
-            if($update){
+            $update5 = mysqli_query($conexion, $sql6);
+            if($update5){
                 echo "Los datos se han actualizado correctamente";
                 include 'correcto.php';
             }else {
@@ -82,8 +82,8 @@
         if($cuota > 12){
            echo $monto = $monto - 1000;
             echo $sql7 = "UPDATE pagos SET Cuotasig='$monto'  WHERE Solicitud=$solicitud";
-            $update = mysqli_query($conexion, $sql7);
-            if($update){
+            $update6 = mysqli_query($conexion, $sql7);
+            if($update6){
                 echo "Los datos se han actualizado correctamente";
                 include 'correcto.php';
             }else {
