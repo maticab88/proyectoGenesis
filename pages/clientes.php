@@ -10,7 +10,7 @@
         include 'error.php';
     }
     else{
-        $fecha = $_POST['fecha']
+        $fecha = $_POST['fecha'];
         $vendedor = $_POST['vendedor'];
         $equipo = $_POST['equipo'];
         $indice = $_POST['indice'];
