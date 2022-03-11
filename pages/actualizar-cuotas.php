@@ -17,6 +17,7 @@
         $total = $total + $seguro;
         /*$sql = "UPDATE pagos SET Sellado='$SeguroD', Total='$total', Observaciones='$observaciones', Cuota='$cuota', Abono='$adelanto'  WHERE Solicitud=$solicitud";*/
         /*$update = mysqli_query($conexion, $sql); */
+echo "hola";
         if(isset($seguro)){
             echo $sql2 = "UPDATE pagos SET Sellado='$SeguroD'  WHERE Solicitud=$solicitud";
             $update = mysqli_query($conexion, $sql2); 
