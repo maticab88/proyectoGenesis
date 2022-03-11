@@ -30,6 +30,7 @@
                 include 'error.php';
             }
         }
+echo entro;
         if(isset($observaciones)){
             echo $sql4 = "UPDATE pagos SET Observaciones='$observaciones' WHERE Solicitud=$solicitud";
             $update2 = mysqli_query($conexion, $sql4);
