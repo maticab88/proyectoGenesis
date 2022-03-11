@@ -10,14 +10,15 @@
         $query2 = mysqli_query($conexion, "SELECT * FROM pagos WHERE solicitud = $solicitud");  
         $pagos = mysqli_fetch_assoc($query2);
         $total = $pagos['Total'];
-        $monto = $pagos['Cuotasig'];
+
         mysqli_query($conexion, "SET NAMES 'utf8'"); 
         
         $SeguroD = $sellado + $seguro;
         $total = $total + $seguro;
-        $sql = "UPDATE pagos SET Sellado='$SeguroD', Total='$total', Observaciones='$observaciones', Cuota='$cuota', Abono='$adelanto'  WHERE Solicitud=$solicitud";
-        $update = mysqli_query($conexion, $sql);
-       
+        $sql = "UPDATE pagos SET Sellado='$SeguroD', Total='$total', Observaciones='$observaciones', Cuotas='$cuota', Abono='$adelanto'  WHERE Solicitud=$solicitud";
+        $update = mysqli_query($conexion, $sql); 
+
+    
         if($update){
             echo "Los datos se han actualizado correctamente";
             include 'correcto.php';
