@@ -11,7 +11,7 @@
         echo "datos correctos";
     }else{
 
-        header("Location: https://app-genesis.herokuapp.com/sign-in.php");
+        header("Location: https://app-genesis.herokuapp.com/pages/sign-in.php");
         echo "ERROR".mysqli_error($conexion);
         exit;
     }
