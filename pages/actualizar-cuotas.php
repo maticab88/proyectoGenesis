@@ -22,6 +22,12 @@
         $sql = "UPDATE pagos SET Sellado='$SeguroD', Total='$total', Observaciones='$observaciones', Cuota='$cuota', Adelanto='$adelanto', Abono='$abono', Debe='$debe'  WHERE Solicitud=$solicitud";
         $update = mysqli_query($conexion, $sql); 
 
+        if($cuota > 12){
+            $monto = $pagos['Cuotasig'] - 1000;
+            $sql = "UPDATE pagos SET Cuotasig='$monto' WHERE Solicitud=$solicitud";
+            $update = mysqli_query($conexion, $sql); 
+
+        }
     
         if($update){
             echo "Los datos se han actualizado correctamente";
