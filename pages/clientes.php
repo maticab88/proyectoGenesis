@@ -11,6 +11,7 @@
     }
     else{
         $fecha = $_POST['fecha'];
+         echo $fechastr =strtotime($fecha);
         $vendedor = $_POST['vendedor'];
         $equipo = $_POST['equipo'];
         $indice = $_POST['indice'];
