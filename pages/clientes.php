@@ -62,7 +62,7 @@
             else{
                 echo "ERROR".mysqli_error($conexion);
             }
-            var_dump($vencimiento);
+            var_dump($mes);
 
             $sql3 = "INSERT INTO usuarios VALUES('$dni', '$mail', '$solicitud')";
             $insert3 = mysqli_query($conexion, $sql3);
