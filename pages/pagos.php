@@ -92,10 +92,10 @@
                         <p class="text-xs font-weight-bold mb-0 text-center"><?php echo $pagos['Abono']."/".$pagos['Debe']; ?></p>
                       </td>
                       <td class="align-middle text-center">
-                        <p class="text-xs font-weight-bold mb-0 text-center"><?php echo $pagos['Cuota']; ?></p>
+                        <p class="text-xs font-weight-bold mb-0 text-center"><?php echo $pagos['Cuotasig']; ?></p>
                       </td>
                       <td class="align-middle text-center">
-                        <p class="text-xs font-weight-bold mb-0 text-center"><?php echo $pagos['Cuotasig']; ?></p>
+                        <p class="text-xs font-weight-bold mb-0 text-center"><?php echo $pagos['Cuota']; ?></p>
                       </td>
                       <td class="align-middle text-center">
                         <p class="text-xs font-weight-bold mb-0 text-center"><?php echo $pagos['Vencimiento']; ?></p>
