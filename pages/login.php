@@ -2,7 +2,7 @@
     include 'conexion.php';
     $dni = $_POST['usuario'];
     $contraseña = $_POST['contraseña'];
-    $sql = "SELECT * FROM usuarios WHERE dni='$dni' contraseña='contraseña'";
+    $sql = "SELECT * FROM usuarios WHERE dni='$dni'";
     $login = mysqli_query($conexion, $sql);
     if($login && mysqli_num_rows($login) == 1){  
 
