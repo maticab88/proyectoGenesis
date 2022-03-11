@@ -10,12 +10,16 @@
         $query2 = mysqli_query($conexion, "SELECT * FROM pagos WHERE solicitud = $solicitud");  
         $pagos = mysqli_fetch_assoc($query2);
         $total = $pagos['Total'];
-        $adelanto = $_POST['adelanto'] + $pagos['Abono'];
+        $adelanto = $_POST['adelanto'] + $pagos['Adelanto'];
+
         mysqli_query($conexion, "SET NAMES 'utf8'"); 
         
         $SeguroD = $sellado + $seguro;
         $total = $total + $seguro;
-        $sql = "UPDATE pagos SET Sellado='$SeguroD', Total='$total', Observaciones='$observaciones', Cuotas='$cuota', Abono='$adelanto'  WHERE Solicitud=$solicitud";
+        $abono = $pagos['Abono'] + $_POST['abono'];
+        $debe = $abono - $total;
+
+        $sql = "UPDATE pagos SET Sellado='$SeguroD', Total='$total', Observaciones='$observaciones', Cuotas='$cuota', Adelanto='$adelanto', Abono='$abono', Debe='$debe'  WHERE Solicitud=$solicitud";
         $update = mysqli_query($conexion, $sql); 
 
     

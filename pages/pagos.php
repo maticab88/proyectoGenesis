@@ -26,7 +26,7 @@
           <div class="card my-4">
             <div class="card-header p-0 position-relative mt-n4 mx-3 z-index-2">
               <div class="bg-primary shadow-primary border-radius-lg pt-4 pb-3">
-                <h6 class="text-white text-capitalize ps-3"><?php echo $cliente['nombre']; ?></h6>
+                <?php echo '<h6 class="text-white text-capitalize ps-3">'.$cliente['nombre'].'</h6>'; ?>
               </div>
             </div>
             <div class="card-body px-0 pb-2">
@@ -42,7 +42,8 @@
                       <th class="text-center text-uppercase  text-xxs font-weight-bolder opacity-7">Cargo por adm</th>
                       <th class="text-center text-uppercase  text-xxs font-weight-bolder opacity-7">Sellado</th>
                       <th class="text-center text-uppercase  text-xxs font-weight-bolder opacity-7">Total</th>
-                      <th class="text-center text-uppercase  text-xxs font-weight-bolder opacity-7">Abono</th>
+                      <th class="text-center text-uppercase  text-xxs font-weight-bolder opacity-7">Abono/Debe</th>
+                      <th class="text-center text-uppercase  text-xxs font-weight-bolder opacity-7">Adelanto</th>
                       <th class="text-center text-uppercase  text-xxs font-weight-bolder opacity-7">Cuota</th>
                       <th class="text-center text-uppercase  text-xxs font-weight-bolder opacity-7">Monto</th>
                       <th class="text-center text-uppercase  text-xxs font-weight-bolder opacity-7">Vencimiento</th>
@@ -88,7 +89,7 @@
                         <p class="text-xs font-weight-bold mb-0 text-center"><?php echo $pagos['Total']; ?></p>
                       </td>
                       <td class="align-middle text-center">
-                        <p class="text-xs font-weight-bold mb-0 text-center"><?php echo $pagos['Abono']; ?></p>
+                        <p class="text-xs font-weight-bold mb-0 text-center"><?php echo $pagos['Abono']."/".$pagos['Debe']; ?></p>
                       </td>
                       <td class="align-middle text-center">
                         <p class="text-xs font-weight-bold mb-0 text-center"><?php echo $pagos['Cuota']; ?></p>

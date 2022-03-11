@@ -35,6 +35,14 @@
             </div>  
         </div>
     </div>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="input-group input-group-dynamic mb-4">
+                <label class="form-label" for="precio">Abono</label>
+                <input class="form-control" type="number" name="abono" id="">
+            </div>  
+        </div>
+    </div>
 
         <input type="submit" value="Enviar">
         <input type="hidden" name="Solicitud" id="" value = "<?php echo $solicitud;?>">

@@ -43,14 +43,14 @@
             $derechoadm = $alicuota /100 * 5;
             $sellado = $alicuota / 100 * 3;
             $cargoadm = 12000;
-            $abono = 6374;
-            $debe = 10000;
+            $abono = 0;
+            
             $cuotaS = 1;
             $monto = $alicuota + ($cargoadm/12) + $sellado + $derechoadm;
             /*$vencimiento = "DATE_ADD($fecha, INTERVAL 1 MONTH)";*/
             $total = $alicuota + $derechoadm + $sellado + $cargoadm;
-
-            echo $sql2 = "INSERT INTO pagos VALUES('$solicitud', '$precio', '$alicuota', '$derechoadm', '$cargoadm', '$sellado', '$total', '$abono', '$cuotaS', '$monto', '9', 'No hay observacines', '2', '0', 'LICITO', 'D', '$cuotas')";
+            $debe = $total;
+            echo $sql2 = "INSERT INTO pagos VALUES('$solicitud', '$precio', '$alicuota', '$derechoadm', '$cargoadm', '$sellado', '$total', '$abono','$debe', '$cuotaS', '$monto', '9', 'No hay observacines', '2', '0', 'LICITO', 'D', '$cuotas')";
             $insert2 = mysqli_query($conexion, $sql2);
             if ($insert2){
                 echo "DATOS INSERTADOS CORRECTAMENTE";
