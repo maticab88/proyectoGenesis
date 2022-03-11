@@ -16,22 +16,22 @@
         $SeguroD = $sellado + $seguro;
         $total = $total + $seguro;
         /*$sql = "UPDATE pagos SET Sellado='$SeguroD', Total='$total', Observaciones='$observaciones', Cuota='$cuota', Abono='$adelanto'  WHERE Solicitud=$solicitud";*/
-        $update = mysqli_query($conexion, $sql); 
-        $sql = "UPDATE pagos SET Sellado='$SeguroD'  WHERE Solicitud=$solicitud";
-        $update = mysqli_query($conexion, $sql); 
-        $sql = "UPDATE pagos SET Total='$total'  WHERE Solicitud=$solicitud";
-        $update = mysqli_query($conexion, $sql);
-        $sql = "UPDATE pagos SET Observaciones='$observaciones'  WHERE Solicitud=$solicitud";
-        $update = mysqli_query($conexion, $sql);
-        $sql = "UPDATE pagos SET Cuota='$cuota'  WHERE Solicitud=$solicitud";
-        $update = mysqli_query($conexion, $sql);
-        $sql = "UPDATE pagos SET Abono='$adelanto'  WHERE Solicitud=$solicitud";
-        $update = mysqli_query($conexion, $sql);
+        /*$update = mysqli_query($conexion, $sql); */
+        $sql2 = "UPDATE pagos SET Sellado='$SeguroD'  WHERE Solicitud=$solicitud";
+        $update = mysqli_query($conexion, $sql2); 
+        $sql3 = "UPDATE pagos SET Total='$total'  WHERE Solicitud=$solicitud";
+        $update = mysqli_query($conexion, $sql3);
+        $sql4 = "UPDATE pagos SET Observaciones='$observaciones'  WHERE Solicitud=$solicitud";
+        $update = mysqli_query($conexion, $sql4);
+        $sql5 = "UPDATE pagos SET Cuota='$cuota'  WHERE Solicitud=$solicitud";
+        $update = mysqli_query($conexion, $sql5);
+        $sql6 = "UPDATE pagos SET Abono='$adelanto'  WHERE Solicitud=$solicitud";
+        $update = mysqli_query($conexion, $sql6);
 
         if($cuota > 12){
            echo $monto = $monto - 1000;
-            $sql = "UPDATE pagos SET Cuotasig='$monto'  WHERE Solicitud=$solicitud";
-            $update = mysqli_query($conexion, $sql);
+            echo $sql7 = "UPDATE pagos SET Cuotasig='$monto'  WHERE Solicitud=$solicitud";
+            $update = mysqli_query($conexion, $sql7);
         }
 
         if($update){
