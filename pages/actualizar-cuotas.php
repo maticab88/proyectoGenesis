@@ -17,7 +17,6 @@
         $total = $total + $seguro;
         /*$sql = "UPDATE pagos SET Sellado='$SeguroD', Total='$total', Observaciones='$observaciones', Cuota='$cuota', Abono='$adelanto'  WHERE Solicitud=$solicitud";*/
         /*$update = mysqli_query($conexion, $sql); */
-echo "hola";
         if(isset($seguro)){
             echo $sql2 = "UPDATE pagos SET Sellado='$SeguroD'  WHERE Solicitud=$solicitud";
             $update = mysqli_query($conexion, $sql2); 
@@ -30,9 +29,7 @@ echo "hola";
                 echo "Error en actualizar los datos echo .mysqli_error($conexion)";
                 include 'error.php';
             }
-        }
-echo "entro";
-        if(isset($observaciones)){
+        }elseif(isset($observaciones)){
             echo $sql4 = "UPDATE pagos SET Observaciones='$observaciones' WHERE Solicitud=$solicitud";
             $update2 = mysqli_query($conexion, $sql4);
             if($update2){
@@ -43,6 +40,7 @@ echo "entro";
                 include 'error.php';
             }
         }
+        
         
         if(isset($cuota)){
             echo "entro";
