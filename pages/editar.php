@@ -7,7 +7,7 @@
 ?>
 
 <form action="actualizar-cuotas.php" method="POST">
-      <div class="row">
+    <div class="row">
         <div class="col-md-6">
             <div class="input-group input-group-dynamic mb-4">
                 <label class="form-label" for="precio">Cuota a pagar</label>
@@ -20,14 +20,21 @@
                 <input class="form-control" type="number" name="seguro" id="">
             </div>
         </div>
-      </div>
-      <div class="row">
+    </div>
+    <div class="row">
         <div class="col-md-6">
             <div class="input-group input-group-dynamic mb-4">
                 <label class="form-label" for="precio">Observaciones</label>
                 <input class="form-control" type="text" name="observaciones" id="">
-            </div>
-      </div>
+            </div>  
+        </div>
+        <div class="col-md-6">
+            <div class="input-group input-group-dynamic mb-4">
+                <label class="form-label" for="precio">Adelanto</label>
+                <input class="form-control" type="number" name="adelanto" id="">
+            </div>  
+        </div>
+    </div>
 
         <input type="submit" value="Enviar">
         <input type="hidden" name="Solicitud" id="" value = "<?php echo $solicitud;?>">
