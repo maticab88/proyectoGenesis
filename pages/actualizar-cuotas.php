@@ -43,6 +43,7 @@
         }
         
         if(isset($cuota)){
+            echo entro;
            echo $sql5 = "UPDATE pagos SET Cuota='$cuota'  WHERE Solicitud=$solicitud";
             $update3 = mysqli_query($conexion, $sql5);
             if($update3){
@@ -54,17 +55,6 @@
             }
         }
         
-        if(isset($cuota)){
-            $sql5 = "UPDATE pagos SET Cuota='$cuota'  WHERE Solicitud=$solicitud";
-            $update4 = mysqli_query($conexion, $sql5);
-            if($update4){
-                echo "Los datos se han actualizado correctamente";
-                include 'correcto.php';
-            }else {
-                echo "Error en actualizar los datos echo .mysqli_error($conexion)";
-                include 'error.php';
-            }
-        }
 
         if(isset($adelanto)){
             $sql6 = "UPDATE pagos SET Abono='$adelanto'  WHERE Solicitud=$solicitud";
