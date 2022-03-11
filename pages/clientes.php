@@ -50,10 +50,7 @@
             /*$vencimiento = "DATE_ADD($fecha, INTERVAL 1 MONTH)";*/
             $total = $alicuota + $derechoadm + $sellado + $cargoadm;
             $debe = $total;
-            $dia = strtotime("d", $fecha);
-            $año = strtotime("dm", $fecha);
-            $año = strtotime("Y", $fecha);
-           echo $vencimiento = $dia."/".$mes."/".$año;
+            
 
             echo $sql2 = "INSERT INTO pagos VALUES('$solicitud', '$precio', '$alicuota', '$derechoadm', '$cargoadm', '$sellado', '$total', '$abono','$debe', '$cuotaS', '$monto', '9', 'No hay observaciones', '2', '0', 'LICITO', 'D', '$cuotas')";
             $insert2 = mysqli_query($conexion, $sql2);
