@@ -15,6 +15,7 @@
         $mes = date("m", $fechastr);
         $dia = date("d", $fechastr);
         $año = date("Y", $fechastr);
+        $vencimiento = $dia.'/'.$mes.'/'.$año;
         $vendedor = $_POST['vendedor'];
         $equipo = $_POST['equipo'];
         $indice = $_POST['indice'];
@@ -62,7 +63,7 @@
             else{
                 echo "ERROR".mysqli_error($conexion);
             }
-            var_dump($dia);
+            var_dump($vencimiento);
 
             $sql3 = "INSERT INTO usuarios VALUES('$dni', '$mail', '$solicitud')";
             $insert3 = mysqli_query($conexion, $sql3);
