@@ -31,7 +31,7 @@
             }
         }
         if(isset($observaciones)){
-          echo  $sql4 = "UPDATE pagos SET Observaciones='$observaciones'  WHERE Solicitud=$solicitud";
+            echo $sql4 = "UPDATE pagos SET Observaciones='$observaciones' WHERE Solicitud=$solicitud";
             $update = mysqli_query($conexion, $sql4);
             if($update){
                 echo "Los datos se han actualizado correctamente";
@@ -43,7 +43,7 @@
         }
         
         if(isset($cuota)){
-            $sql5 = "UPDATE pagos SET Cuota='$cuota'  WHERE Solicitud=$solicitud";
+           echo $sql5 = "UPDATE pagos SET Cuota='$cuota'  WHERE Solicitud=$solicitud";
             $update = mysqli_query($conexion, $sql5);
             if($update){
                 echo "Los datos se han actualizado correctamente";
@@ -66,7 +66,7 @@
             }
         }
 
-        if(isset($cuota)){
+        if(isset($adelanto)){
             $sql6 = "UPDATE pagos SET Abono='$adelanto'  WHERE Solicitud=$solicitud";
             $update = mysqli_query($conexion, $sql6);
             if($update){
