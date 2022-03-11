@@ -44,7 +44,7 @@ echo entro;
         }
         
         if(isset($cuota)){
-            echo entro;
+            echo "entro";
            echo $sql5 = "UPDATE pagos SET Cuota='$cuota'  WHERE Solicitud=$solicitud";
             $update3 = mysqli_query($conexion, $sql5);
             if($update3){
