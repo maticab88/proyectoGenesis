@@ -15,24 +15,72 @@
         
         $SeguroD = $sellado + $seguro;
         $total = $total + $seguro;
-        /*$sql = "UPDATE pagos SET Sellado='$SeguroD', Total='$total', Observaciones='$observaciones', Cuota='$cuota', Abono='$adelanto'  WHERE Solicitud=$solicitud";*/
-        /*$update = mysqli_query($conexion, $sql); */
-        $sql2 = "UPDATE pagos SET Sellado='$SeguroD'  WHERE Solicitud=$solicitud";
-        $update = mysqli_query($conexion, $sql2); 
-        $sql3 = "UPDATE pagos SET Total='$total'  WHERE Solicitud=$solicitud";
-        $update = mysqli_query($conexion, $sql3);
-        $sql4 = "UPDATE pagos SET Observaciones='$observaciones'  WHERE Solicitud=$solicitud";
-        $update = mysqli_query($conexion, $sql4);
-        $sql5 = "UPDATE pagos SET Cuota='$cuota'  WHERE Solicitud=$solicitud";
-        $update = mysqli_query($conexion, $sql5);
-        $sql6 = "UPDATE pagos SET Abono='$adelanto'  WHERE Solicitud=$solicitud";
-        $update = mysqli_query($conexion, $sql6);
+        $sql = "UPDATE pagos SET Sellado='$SeguroD', Total='$total', Observaciones='$observaciones', Cuota='$cuota', Abono='$adelanto'  WHERE Solicitud=$solicitud";
+        $update = mysqli_query($conexion, $sql);
+        /*if(isset($seguro)){
+            echo $sql2 = "UPDATE pagos SET Sellado='$SeguroD'  WHERE Solicitud=$solicitud";
+            $update = mysqli_query($conexion, $sql2); 
+            $sql3 = "UPDATE pagos SET Total='$total'  WHERE Solicitud=$solicitud";
+            $update = mysqli_query($conexion, $sql3);
+            if($update){
+                echo "Los datos se han actualizado correctamente";
+                include 'correcto.php';
+            }else {
+                echo "Error en actualizar los datos echo .mysqli_error($conexion)";
+                include 'error.php';
+            }
+        }elseif(isset($observaciones)){
+            echo $sql4 = "UPDATE pagos SET Observaciones='$observaciones' WHERE Solicitud=$solicitud";
+            $update2 = mysqli_query($conexion, $sql4);
+            if($update2){
+                echo "Los datos se han actualizado correctamente";
+                include 'correcto.php';
+            }else {
+                echo "Error en actualizar los datos echo .mysqli_error($conexion)";
+                include 'error.php';
+            }
+        }
+        
+        
+        if(isset($cuota)){
+            echo "entro";
+           echo $sql5 = "UPDATE pagos SET Cuota='$cuota'  WHERE Solicitud=$solicitud";
+            $update3 = mysqli_query($conexion, $sql5);
+            if($update3){
+                echo "Los datos se han actualizado correctamente";
+                include 'correcto.php';
+            }else {
+                echo "Error en actualizar los datos echo .mysqli_error($conexion)";
+                include 'error.php';
+            }
+        }
+        
+
+        if(isset($adelanto)){
+            $sql6 = "UPDATE pagos SET Abono='$adelanto'  WHERE Solicitud=$solicitud";
+            $update5 = mysqli_query($conexion, $sql6);
+            if($update5){
+                echo "Los datos se han actualizado correctamente";
+                include 'correcto.php';
+            }else {
+                echo "Error en actualizar los datos echo .mysqli_error($conexion)";
+                include 'error.php';
+            }
+        }
+        
 
         if($cuota > 12){
            echo $monto = $monto - 1000;
             echo $sql7 = "UPDATE pagos SET Cuotasig='$monto'  WHERE Solicitud=$solicitud";
-            $update = mysqli_query($conexion, $sql7);
-        }
+            $update6 = mysqli_query($conexion, $sql7);
+            if($update6){
+                echo "Los datos se han actualizado correctamente";
+                include 'correcto.php';
+            }else {
+                echo "Error en actualizar los datos echo .mysqli_error($conexion)";
+                include 'error.php';
+            }
+        }/*
 
         if($update){
             echo "Los datos se han actualizado correctamente";
