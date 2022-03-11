@@ -6,11 +6,11 @@
         $sellado = $_POST['sellado'];
         $seguro = $_POST['seguro'];
         $observaciones = $_POST['observaciones'];
-        $adelanto = $_POST['adelanto'];
+        
         $query2 = mysqli_query($conexion, "SELECT * FROM pagos WHERE solicitud = $solicitud");  
         $pagos = mysqli_fetch_assoc($query2);
         $total = $pagos['Total'];
-
+        $adelanto = $_POST['adelanto'] + $pagos['Abono'];
         mysqli_query($conexion, "SET NAMES 'utf8'"); 
         
         $SeguroD = $sellado + $seguro;
