@@ -13,7 +13,8 @@
         $fecha = $_POST['fecha'];
         $fechastr =strtotime($fecha);
         $mes = date("m", $fechastr);
-        
+        $dia = date("d", $fechastr);
+        $año = date("Y", $fechastr);
         $vendedor = $_POST['vendedor'];
         $equipo = $_POST['equipo'];
         $indice = $_POST['indice'];
