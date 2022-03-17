@@ -1,7 +1,7 @@
 <?php
         include 'conexion.php';
         include 'menu.php';
-        $cuota =  $_POST['cuota'];
+        echo $cuota =  $_POST['cuota'];
         $solicitud = $_POST['Solicitud'];
         $sellado = $_POST['sellado'];
         $seguro = $_POST['seguro'];
@@ -23,12 +23,19 @@
         $update = mysqli_query($conexion, $sql); 
 
         if($cuota > 12){
-            $monto = $pagos['Cuotasig'] - 1000;
-            $sql = "UPDATE pagos SET Cuotasig='$monto' WHERE Solicitud=$solicitud";
+           echo $monto = $pagos['Cuotasig'] - 1000;
+           echo $sql = "UPDATE pagos SET Cuotasig='$monto' WHERE Solicitud=$solicitud";
             $update = mysqli_query($conexion, $sql); 
 
         }
-    
+
+        echo $sql2 = "INSERT INTO cuotads VALUES('', '$solicitud', '$monto', 'PAGADO')";
+            $insert2 = mysqli_query($conexion, $sql2);
+        if($insert2){
+
+        }else{
+            echo mysqli_error($conexion);
+        }
         if($update){
             echo "Los datos se han actualizado correctamente";
             include 'correcto.php';
