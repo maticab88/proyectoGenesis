@@ -28,7 +28,14 @@
             $update = mysqli_query($conexion, $sql); 
 
         }
-    
+
+        echo $sql2 = "INSERT INTO cuotads VALUES('', '$solicitud', '$monto', 'PAGADO')";
+            $insert2 = mysqli_query($conexion, $sql2);
+        if($insert2){
+
+        }else{
+            echo mysqli_error($conexion);
+        }
         if($update){
             echo "Los datos se han actualizado correctamente";
             include 'correcto.php';
