@@ -29,8 +29,8 @@
 
         }
 
-        echo $sql2 = "INSERT INTO cuotas VALUES('', '$solicitud', '$monto', 'PAGADO')";
-            $insert2 = mysqli_query($conexion, $sql2);
+        echo $sql = "INSERT INTO cuotas VALUES('', '$solicitud', '$monto', 'PAGADO')";
+            $insert2 = mysqli_query($conexion, $sql);
         if($insert2){
 
         }else{
