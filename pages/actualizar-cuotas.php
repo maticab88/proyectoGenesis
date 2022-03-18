@@ -12,7 +12,7 @@
         $total = $pagos['Total'];
         $adelanto = $_POST['adelanto'] + $pagos['Adelanto'];
 
-        mysqli_query($conexion, "SET NAMES 'utf8'"); 
+        mysqli_query($conexion, "SET NAMES 'utf8'");
         
         $SeguroD = $sellado + $seguro;
         $total = $total + $seguro;
@@ -21,17 +21,19 @@
 
         $sql = "UPDATE pagos SET Sellado='$SeguroD', Total='$total', Observaciones='$observaciones', Cuota='$cuota', Adelanto='$adelanto', Abono='$abono', Debe='$debe'  WHERE Solicitud=$solicitud";
         $update = mysqli_query($conexion, $sql); 
-        $monto = 0;
-        if($cuota > 12){
-           echo $monto = $pagos['Cuotasig'] - 1000;
-           echo $sql = "UPDATE pagos SET Cuotasig='$monto' WHERE Solicitud=$solicitud";
-            $update = mysqli_query($conexion, $sql); 
+        $monto = $pagos['Cuotasig'];
 
-        }
 
-        echo $sql = "INSERT INTO cuotas VALUES(null,'$solicitud', '$monto', 'PAGADO')";
-            $insert2 = mysqli_query($conexion, $sql);
+        echo $sql2 = "INSERT INTO cuotas VALUES('$solicitud', '$cuota', '$monto', 'PAGADO')";
+            $insert2 = mysqli_query($conexion, $sql2);
             
+
+        if($cuota > 12){
+            echo $monto = $pagos['Cuotasig'] - 1000;
+            echo $sql = "UPDATE pagos SET Cuotasig='$monto' WHERE Solicitud=$solicitud";
+            $update = mysqli_query($conexion, $sql);
+    
+        }
         if($insert2){
 
         }else{
